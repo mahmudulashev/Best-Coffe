@@ -1,0 +1,435 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.hero {
+    width: 1440px;
+    height: 800px;
+    background-color: rgba(243, 215, 183, 1);
+
+}
+
+.Rectangle {
+    height: 690.5px;
+}
+
+header {
+    padding: 40px 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.links {
+    text-decoration: none;
+    color: rgba(51, 51, 51, 1);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+
+}
+
+.hero-card {
+    display: flex;
+    
+}
+
+.quti {
+    position: absolute;
+    top: -90px;
+    left: -120px;
+}
+
+.hero-left {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 130px;
+}
+
+.hero-right {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.birinchi {
+    font-family: Roboto;
+    font-size: 64px;
+    font-weight: 700;
+    margin-left: -30px;
+}
+
+.hero-matn {
+    width: 464px;
+    height: 72px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+
+.button1 {
+    background-color: rgba(10, 119, 95, 1);
+    border: transparent;
+    padding: 16px 24px;
+    border-radius: 30px;
+    width: 193px;
+    height: 51px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin-top: 40px;
+    margin-left: -285px;
+}
+
+.middle {
+    background-color: rgba(248, 248, 242, 1);
+    height: 1756px;
+    width: 1400px;
+    position: relative;
+    /* margin-top: 40px; */
+}
+
+.ikkinchi {
+    font-family: Roboto;
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 95px;
+}
+
+.mid-card {
+    width: 1114px;
+    height: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(202, 202, 202);
+}
+
+.vektor {
+    position: absolute;
+    left: -170px;
+    top: 40px;
+}
+
+.vektor1 {
+    position: absolute;
+    right: -200px;
+    bottom: 600px;
+}
+
+.vektor:hover {
+    transform: scale(1.1);
+}
+
+.vektor1:hover {
+    transform: scale(1.1);
+}
+
+.vektor2:hover {
+    transform: scale(1.1);
+}
+
+.vektor3:hover {
+    transform: scale(1.1);
+}
+
+.vektor2 {
+    position: absolute;
+    right: -180px;
+    bottom: 650px;
+}
+
+.vektor3 {
+    position: absolute;
+    left: -180px;
+    bottom: 130px;
+}
+
+.card1 {
+    display: flex;
+    margin-top: 65px;
+    align-items: center;
+}
+
+.card2 {
+    display: flex;
+    align-items: center;
+}
+
+.card3 {
+    display: flex;
+    /* margin-top: 65px; */
+    align-items: center;
+}
+
+.card4 {
+    display: flex;
+    align-items: center;
+}
+
+.uchinchi {
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 1);
+
+
+}
+
+
+.card-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 7%;
+
+}
+
+.card-left {
+    margin-left: -40px;
+}
+
+.card-left:hover {
+    transform: scale(1.1);
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.matn-card {
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 400;
+    width: 453px;
+    height: 68px;
+    margin-top: 15px;
+    color: rgba(51, 51, 51, 1);
+}
+
+.bot-card {
+    width: 1400px;
+    height: 703px;
+    background-color: rgba(201, 155, 103, 1);
+    margin-top: 70px;
+    position: relative;
+}
+
+.bot-card-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beshinchi {
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 780;
+    text-align: center;
+    padding-top: 55px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.bot-card-matn {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    width: 730px;
+    height: 84px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 20px;
+    word-spacing: 3px;
+}
+
+.bot-card-bottom {
+    display: flex;
+    gap: 20px;
+    margin-left: 30px;
+    position: absolute;
+    bottom: -33%;
+}
+
+.alfred {
+    position: absolute;
+    top: -55px;
+    left: -40px;
+}
+
+.bottom {
+    width: 1400px;
+    height: 850px;
+    background-color: rgba(10, 119, 95, 1);
+    margin-top: 22%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.qoplama {
+    width: 1440px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.oltinchi {
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;    
+}
+
+.sticker {
+    position: absolute;
+    right: 70px;
+    top: 40px;
+
+}
+
+.rasm {
+    margin-left: 30px;
+    margin-top: 120px;
+}
+
+.karta1 {
+    width: 433px;
+    height: 396px;
+    background-color: rgba(248, 248, 242, 1);
+}
+
+.karta2 {
+    width: 433px;
+    height: 396px;
+    background-color: rgba(248, 248, 242, 1);
+}
+
+.karta3 {
+    width: 433px;
+    height: 396px;
+    background-color: rgba(248, 248, 242, 1);
+}
+
+.karta1:hover {
+    transform: scale(1.1);
+    border: 2px solid black;
+}
+
+.karta2:hover {
+    transform: scale(1.1);
+    border: 2px solid black;
+}
+
+.karta3:hover {
+    transform: scale(1.1);
+    border: 2px solid black;
+}
+
+.kartalar {
+    margin-left: 30px;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.yettinchi {
+    font-family: Roboto;
+    font-size: 64px;
+    font-weight: 400;
+    color: rgb(67, 66, 66);
+    text-align: end;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.sakkizinchi {
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-left: 20px;
+    color: rgba(51, 51, 51, 1);
+}
+
+.matn-oxiri {
+    width: 385px;
+    height: 112px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-left:20px;
+    color: rgba(51, 51, 51, 1);
+}
+
+.button11 {
+    background-color: rgba(201, 155, 103, 1);
+    border: transparent;
+    padding: 16px 24px;
+    border-radius: 30px;
+    width: 193px;
+    height: 51px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin-top: 40px;
+    margin-left: 604px;
+}
+
+footer {
+    width: 1440px;
+    height: 160px;
+    background-color: rgba(243, 215, 183, 1);
+    margin-bottom: 10%;
+
+}
+
+.foot {
+    display: flex;
+    margin-top: 68px;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
