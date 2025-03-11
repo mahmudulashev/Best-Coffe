@@ -70,7 +70,7 @@ nav {
 }
 
 .hero-matn {
-    width: 27rem;
+    max-width: 50%;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -105,7 +105,7 @@ nav {
 }
 
 .mid-card {
-    max-width: 75rem;  
+    max-width: 1200px;  
     margin-left: auto;
     margin-right: auto;
 }
@@ -120,13 +120,13 @@ main {
 
 .vektor {
     position: absolute;
-    left: -10.625rem;
+    left: -2.625rem;
     top: 2.5rem;
 }
 
 .vektor1 {
     position: absolute;
-    right: -12.5rem;
+    right: -4.5rem;
     bottom: 37.5rem;
 }
 
@@ -148,13 +148,14 @@ main {
 
 .vektor2 {
     position: absolute;
-    right: -11.25rem;
-    bottom: 40.625rem;
+    right:  -4.25rem;
+    bottom: 8.125rem;
+    
 }
 
 .vektor3 {
     position: absolute;
-    left: -11.25rem;
+    left: -4.25rem;
     bottom: 8.125rem;
 }
 
@@ -211,8 +212,6 @@ button:hover {
     font-family: "Roboto", sans-serif;
     font-size: 1.375rem;
     font-weight: 400;
-    width: 28.3125rem;
-    height: 4.25rem;
     margin-top: 0.9375rem;
     color: rgba(51, 51, 51, 1);
 }
@@ -226,7 +225,7 @@ button:hover {
     background-color: rgba(201, 155, 103, 1);
     margin-top: 4.375rem;
     position: relative;
-    height: 40rem;
+    max-height: 40rem;
 
 }
 
@@ -251,7 +250,7 @@ button:hover {
     font-size: 1.25rem;
     font-weight: 400;
     text-align: center;
-    width: 45.625rem;
+    width: 85%;
     color: rgba(255, 255, 255, 1);
     margin-top: 1.25rem;
     word-spacing: 0.1875rem;
@@ -274,7 +273,7 @@ button:hover {
 .alfred {
     position: absolute;
     top: -3.4375rem;
-    /* left: -2.5rem; */
+   
 }
 
 .bottom {
@@ -360,7 +359,7 @@ button:hover {
 }
 
 .matn-oxiri {
-    width: 24.0625rem;
+    width: 90%;
     height: 7rem;
     font-family: "Roboto", sans-serif;
     font-size: 1.125rem;
@@ -416,6 +415,12 @@ footer h2 {
 
 
 @media (max-width: 768px) {
+
+
+    .Rectangle {
+        height: 30rem;
+    }
+
     nav {
         display: none;
     }
@@ -429,6 +434,10 @@ footer h2 {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .hero-matn {
+        width: 80%;
     }
 
     .hero-right img {
@@ -494,11 +503,32 @@ footer h2 {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+    }
+
+    .karta1, .karta2, .karta3 {
+        
+        width: 15rem;
+        height: 26.75rem;
+       
+    }
+    
+    .sakkizinchi {
+        margin-top: 1rem;
+    }
+
+    .matn-oxiri {
+        width: 90%;
+        text-align: center;
     }
 
     .foot {
         display: flex;
         flex-direction: column;
         gap: 2rem;
+    }
+
+    .vektor, .vektor1, .vektor2, .vektor3 {
+        display: none;
     }
 }
