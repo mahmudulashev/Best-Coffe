@@ -82,6 +82,7 @@ nav {
     display: flex;
     animation: fade-in 1.5s ease-in-out;
     animation: slide-in-left 1.5s ease-in-out;
+    justify-content: space-between;
 }
 
 @keyframes fade-in {
