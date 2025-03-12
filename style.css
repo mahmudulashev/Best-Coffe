@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     overflow-x: hidden;
 }
 
@@ -422,9 +422,12 @@ footer h2 {
     
 }
 
+.vektor, .sticker, .quti, .alfred {
+    max-width: 100%;
+    overflow: hidden;
+}
 
 
-/* Chapdan chiqish animatsiyasi */
 @keyframes slide-in-left {
     from {
         transform: translateX(-50px);
@@ -470,6 +473,7 @@ footer h2 {
     }
 
     .kartalar {
+        margin-right: 1rem;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
@@ -477,8 +481,10 @@ footer h2 {
     }
 
     .karta {
-        width: 80%;
-        height: 26.75rem;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .foot {
@@ -487,9 +493,6 @@ footer h2 {
         gap: 2rem;
     }
 
-    .Rectangle {
-        height: 30rem;
-    }
 
     nav {
         display: none;
@@ -507,8 +510,8 @@ footer h2 {
     }
 
     .chiziq {
-        margin: 1rem;
-        width: 100%;
+        margin: 1rem 0;
+        width: 80%;
         height: 2px;
         background-color: rgba(10, 119, 95, 1);
     }
@@ -578,6 +581,7 @@ footer h2 {
 
     .bot-card-matn {
         width: 90%;
+        margin-bottom: 4rem;
     }
 
     .rasm {
@@ -587,28 +591,20 @@ footer h2 {
     .sticker {
        display: none;
     }
-
-    .kartalar {
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .karta1, .karta2, .karta3 {
-        
-        width: 15rem;
-        height: 26.75rem;
-       
-    }
     
     .sakkizinchi {
         margin-top: 1rem;
+        margin-right: 1rem;
     }
 
     .matn-oxiri {
         width: 90%;
-        text-align: center;
+        
+        margin-bottom: 5rem;
+    }
+
+    .bottom {
+
     }
 
     .foot {
@@ -617,7 +613,13 @@ footer h2 {
         gap: 2rem;
     }
 
+
     .vektor, .vektor1, .vektor2, .vektor3 {
         display: none;
+    }
+
+    h2, h3 {
+        width: 85%;
+        text-align: center;
     }
 }
