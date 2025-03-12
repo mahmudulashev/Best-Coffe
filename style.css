@@ -22,6 +22,13 @@ p {
 
 button {
     font-family: "DM Sans", sans-serif;
+    border: transparent;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
 }
 
 /* HEADER */
@@ -127,12 +134,11 @@ nav {
 
 .button1 {
     background-color: rgba(10, 119, 95, 1);
-    border: transparent;
-    padding: 1rem 1.5rem;
-    border-radius: 1.875rem;
-    font-size: 1rem;
-    font-weight: 300;
-    color: white;
+}
+
+.button1:hover {
+    transform: scale(1.1);
+    background-color: rgba(8, 99, 79, 1);
 }
 
 .middle {
@@ -179,29 +185,11 @@ nav {
     top: 40rem;   
 }
 
-
 .vektor3 {
     position: absolute;
     left: -4.25rem;
     bottom: 8.125rem;
 }
-
-.vektor:hover {
-    transform: scale(1.1);
-}
-
-.vektor1:hover {
-    transform: scale(1.1);
-}
-
-.vektor2:hover {
-    transform: scale(1.1);
-}
-
-.vektor3:hover {
-    transform: scale(1.1);
-}
-
 
 .card1 {
     display: flex;
@@ -348,12 +336,16 @@ button:hover {
     width: 27.0625rem;
     background-color: rgba(248, 248, 242, 1);
     border-radius: 1.25rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
 }
 
 
 .karta:hover {
     transform: scale(1.1);
     border: 0.125rem solid black;
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    
 }
 
 
@@ -388,12 +380,6 @@ button:hover {
 
 .button11 {
     background-color: rgba(201, 155, 103, 1);
-    border: transparent;
-    padding: 1rem 1.5rem;
-    border-radius: 1.875rem;
-    font-size: 1rem;
-    font-weight: 500;
-    color: white;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
 }
@@ -403,12 +389,12 @@ button:hover {
 footer {
     width: 100%;
     background-color: rgba(243, 215, 183, 1);
-    margin-bottom: 10%;
+    padding: 2rem 0;
+    animation: fade-in 1.5s ease-in-out;
 }
 
 .foot {
     display: flex;
-    margin-top: 4.25rem;
     margin-left: 3.125rem;
     margin-right: 3.125rem;
     align-items: center;
@@ -419,7 +405,14 @@ footer {
     display: flex;
     align-items: center;
     gap: 1.25rem;
-    margin-bottom: 2rem;
+}
+
+.icons img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
 }
 
 footer h2 {
@@ -430,13 +423,6 @@ footer h2 {
 }
 
 
-
-
-/* Hero qismi */
-.hero-card {
-    display: flex;
-    
-}
 
 /* Chapdan chiqish animatsiyasi */
 @keyframes slide-in-left {
@@ -450,67 +436,13 @@ footer h2 {
     }
 }
 
-/* Tugmalar */
-.button1 {
-    background-color: rgba(10, 119, 95, 1);
-    border: transparent;
-    padding: 1rem 1.5rem;
-    border-radius: 1rem;
-    font-family: "DM Sans", sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    color: white;
-    transition: transform 0.3s ease-in-out, background-color 0.3s;
-}
 
-.button1:hover {
-    transform: scale(1.1);
-    background-color: rgba(8, 99, 79, 1);
-}
 
-/* Kartalar */
-.karta1, .karta2, .karta3 {
-    width: 27.0625rem;
-    height: 24.75rem;
-    background-color: rgba(248, 248, 242, 1);
-    border-radius: 1.25rem;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-}
 
-/* Hover effekti */
-.karta1:hover, .karta2:hover, .karta3:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
 
-/* Footer qismi */
-footer {
-    width: 100%;
-    background-color: rgba(243, 215, 183, 1);
-    margin-bottom: 10%;
-    animation: fade-in 1.5s ease-in-out;
-}
 
-/* Icon hover */
-.icons img {
-    transition: transform 0.3s ease-in-out;
-}
-
-.icons img:hover {
-    transform: scale(1.2);
-}
-
-h2 {
-    font-family: "Space Grotesk", sans-serif;
-}
-
-h3 {
-    font-family: "Space Grotesk", sans-serif; 
-}
-
-/* Responsive */
 @media (max-width: 768px) {
-    .hero-card {
+    .hero {
         flex-direction: column-reverse;
     }
 
@@ -544,8 +476,8 @@ h3 {
         flex-direction: column;
     }
 
-    .karta1, .karta2, .karta3 {
-        width: 15rem;
+    .karta {
+        width: 80%;
         height: 26.75rem;
     }
 
@@ -554,13 +486,6 @@ h3 {
         flex-direction: column;
         gap: 2rem;
     }
-}
-
-
-
-
-@media (max-width: 768px) {
-
 
     .Rectangle {
         height: 30rem;
@@ -579,6 +504,13 @@ h3 {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .chiziq {
+        margin: 1rem;
+        width: 100%;
+        height: 2px;
+        background-color: rgba(10, 119, 95, 1);
     }
 
     .hero-matn {
@@ -602,22 +534,34 @@ h3 {
         display: none;
     }
 
-    .card1, .card3 {
+    .card1 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .card2, .card4 {
+    .card2 {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
 
+    .card-2 {
+        flex-direction: column;
+    }
+
     .card-right {
         margin-left: 0;
         margin-right: 0;
-        
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-right1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .bot-card-bottom {
