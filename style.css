@@ -8,20 +8,31 @@ body {
     overflow-x: hidden;
 }
 
-.hero {
-    width: 100%;
-    background-color: rgba(243, 215, 183, 1);
+main {
+    position: relative;
 }
 
-.Rectangle {
-    height: 43.15625rem;
+h2, h3 {
+    font-family: "Space Grotesk", sans-serif;
 }
+
+p {
+    font-family: "DM Sans", sans-serif;
+}
+
+button {
+    font-family: "DM Sans", sans-serif;
+}
+
+/* HEADER */
 
 header {
     padding: 2.5rem 3.125rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    animation: slide-in-top 1.2s ease-in-out;
+    background-color: rgba(243, 215, 183, 1);
 }
 
 nav {
@@ -29,17 +40,54 @@ nav {
     gap: 1.25rem;
 }
 
+
 .links {
     text-decoration: none;
     color: rgba(51, 51, 51, 1);
-    font-family: "Roboto", sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-weight: 700;
     font-size: 0.875rem;
+    transition: color 0.3s ease-in-out;
 }
 
-.hero-card {
-    display: flex;
+.links:hover {
+    color: rgba(10, 119, 95, 1);
 }
+
+@keyframes slide-in-top {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+/* HERO */
+
+.hero {
+    width: 100%;
+    background-color: rgba(243, 215, 183, 1);
+    display: flex;
+    animation: fade-in 1.5s ease-in-out;
+    animation: slide-in-left 1.5s ease-in-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .quti {
     position: absolute;
@@ -64,16 +112,17 @@ nav {
 }
 
 .birinchi {
-    font-family: "Roboto", sans-serif;
     font-size: 4rem;
     font-weight: 700;
+    text-transform: uppercase;
+    width: 80%;
 }
 
 .hero-matn {
-    max-width: 50%;
-    font-family: "Roboto", sans-serif;
+    width: 70%;
+    margin-right: 10%;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 400;  
 }
 
 .button1 {
@@ -81,9 +130,8 @@ nav {
     border: transparent;
     padding: 1rem 1.5rem;
     border-radius: 1.875rem;
-    font-family: "Roboto", sans-serif;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 300;
     color: white;
 }
 
@@ -92,30 +140,25 @@ nav {
     height: auto;
     width: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
 .ikkinchi {
-    font-family: "Roboto", sans-serif;
     font-size: 2.8125rem;
     font-weight: 800;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 5.9375rem;
+    padding-top: 4rem;
 }
 
 .mid-card {
-    max-width: 1200px;  
-    margin-left: auto;
-    margin-right: auto;
-}
-
-main {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    position: relative;
-    background-color: rgb(202, 202, 202);
+    justify-content: center;
+    align-items: center;
 }
 
 .vektor {
@@ -128,6 +171,19 @@ main {
     position: absolute;
     right: -4.5rem;
     bottom: 37.5rem;
+}
+
+.vektor2 {
+    position: absolute;
+    right:  -4.25rem;
+    top: 40rem;   
+}
+
+
+.vektor3 {
+    position: absolute;
+    left: -4.25rem;
+    bottom: 8.125rem;
 }
 
 .vektor:hover {
@@ -146,18 +202,6 @@ main {
     transform: scale(1.1);
 }
 
-.vektor2 {
-    position: absolute;
-    right:  -4.25rem;
-    bottom: 8.125rem;
-    
-}
-
-.vektor3 {
-    position: absolute;
-    left: -4.25rem;
-    bottom: 8.125rem;
-}
 
 .card1 {
     display: flex;
@@ -170,18 +214,8 @@ main {
     align-items: center;
 }
 
-.card3 {
-    display: flex;
-    align-items: center;
-}
-
-.card4 {
-    display: flex;
-    align-items: center;
-}
 
 .uchinchi {
-    font-family: "Roboto", sans-serif;
     font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -209,15 +243,17 @@ button:hover {
 }
 
 .matn-card {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.375rem;
+    font-size: 1.1rem;
     font-weight: 400;
     margin-top: 0.9375rem;
     color: rgba(51, 51, 51, 1);
+    width: 80%;
 }
 
 
-.bot-card {
+/* MIDDLE-BOTTOM */
+
+.middle-bottom {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -236,7 +272,6 @@ button:hover {
 }
 
 .beshinchi {
-    font-family: "Roboto", sans-serif;
     font-size: 3.125rem;
     font-weight: 780;
     text-align: center;
@@ -246,7 +281,6 @@ button:hover {
 }
 
 .bot-card-matn {
-    font-family: "Roboto", sans-serif;
     font-size: 1.25rem;
     font-weight: 400;
     text-align: center;
@@ -254,13 +288,6 @@ button:hover {
     color: rgba(255, 255, 255, 1);
     margin-top: 1.25rem;
     word-spacing: 0.1875rem;
-}
-
-.middle-bottom {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
@@ -272,9 +299,10 @@ button:hover {
 
 .alfred {
     position: absolute;
-    top: -3.4375rem;
-   
+    top: -3.4375rem; 
 }
+
+/* BOTTOM */
 
 .bottom {
     width: 100%;
@@ -288,16 +316,7 @@ button:hover {
     align-items: center;
 }
 
-.qoplama {
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .oltinchi {
-    font-family: "Roboto", sans-serif;
     font-size: 3.125rem;
     font-weight: 800;
     color: white;
@@ -313,21 +332,7 @@ button:hover {
 }
 
 .rasm {
-   
     margin-top: 7.5rem;
-}
-
-.karta1, .karta2, .karta3 {
-    width: 27.0625rem;
-    height: 24.75rem;
-    background-color: rgba(248, 248, 242, 1);
-    border-radius: 1.25rem;
-}
-
-
-.karta1:hover, .karta2:hover, .karta3:hover {
-    transform: scale(1.1);
-    border: 0.125rem solid black;
 }
 
 
@@ -338,8 +343,21 @@ button:hover {
     gap: 1.25rem;
 }
 
+
+.karta {
+    width: 27.0625rem;
+    background-color: rgba(248, 248, 242, 1);
+    border-radius: 1.25rem;
+}
+
+
+.karta:hover {
+    transform: scale(1.1);
+    border: 0.125rem solid black;
+}
+
+
 .yettinchi {
-    font-family: "Roboto", sans-serif;
     font-size: 4rem;
     font-weight: 400;
     color: rgb(67, 66, 66);
@@ -349,11 +367,10 @@ button:hover {
 }
 
 .sakkizinchi {
-    font-family: "Roboto", sans-serif;
     font-size: 2.5rem;
     font-weight: 500;
     text-transform: uppercase;
-    margin-top: 3.75rem;
+    margin-top: 1.75rem;
     margin-left: 1.25rem;
     color: rgba(51, 51, 51, 1);
 }
@@ -361,9 +378,9 @@ button:hover {
 .matn-oxiri {
     width: 90%;
     height: 7rem;
-    font-family: "Roboto", sans-serif;
     font-size: 1.125rem;
     font-weight: 400;
+    margin-bottom: 1rem;
     margin-top: 0.625rem;
     margin-left: 1.25rem;
     color: rgba(51, 51, 51, 1);
@@ -374,13 +391,14 @@ button:hover {
     border: transparent;
     padding: 1rem 1.5rem;
     border-radius: 1.875rem;
-    font-family: "Roboto", sans-serif;
     font-size: 1rem;
     font-weight: 500;
     color: white;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
 }
+
+/* FOOTER */
 
 footer {
     width: 100%;
@@ -405,12 +423,139 @@ footer {
 }
 
 footer h2 {
-    font-family: "Roboto", sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
     color: rgba(51, 51, 51, 1);
     
 }
+
+
+
+
+/* Hero qismi */
+.hero-card {
+    display: flex;
+    
+}
+
+/* Chapdan chiqish animatsiyasi */
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Tugmalar */
+.button1 {
+    background-color: rgba(10, 119, 95, 1);
+    border: transparent;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+.button1:hover {
+    transform: scale(1.1);
+    background-color: rgba(8, 99, 79, 1);
+}
+
+/* Kartalar */
+.karta1, .karta2, .karta3 {
+    width: 27.0625rem;
+    height: 24.75rem;
+    background-color: rgba(248, 248, 242, 1);
+    border-radius: 1.25rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+/* Hover effekti */
+.karta1:hover, .karta2:hover, .karta3:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer qismi */
+footer {
+    width: 100%;
+    background-color: rgba(243, 215, 183, 1);
+    margin-bottom: 10%;
+    animation: fade-in 1.5s ease-in-out;
+}
+
+/* Icon hover */
+.icons img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+}
+
+h2 {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+h3 {
+    font-family: "Space Grotesk", sans-serif; 
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-card {
+        flex-direction: column-reverse;
+    }
+
+    .hero-left, .hero-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-matn {
+        width: 80%;
+    }
+
+    .hero-right img {
+        border: 5px solid rgba(10, 119, 95, 1);
+        border-radius: 17px;
+        width: 89%;
+        height: 89%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .hero-right img:hover {
+        transform: scale(1.05);
+    }
+
+    .kartalar {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .karta1, .karta2, .karta3 {
+        width: 15rem;
+        height: 26.75rem;
+    }
+
+    .foot {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
 
 
 
