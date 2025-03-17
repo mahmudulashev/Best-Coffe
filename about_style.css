@@ -329,6 +329,114 @@ li {
     top: -10rem;
 }
 
+.bottom {
+    margin-top: 3rem;
+    background-color: rgba(10, 119, 95, 1);
+    
+}
+
+.bottom-h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 3rem;
+
+}
+
+.cards {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+
+.card {
+    width: 25rem;
+    background-color: rgba(248, 248, 242, 1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+
+
+.card-content {
+    margin: 1rem 2rem ;
+
+    
+}
+
+.card-content h2 {
+    color: black;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: start;
+}
+
+.card-img {
+    margin: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.UK {
+    width: 35%;
+}
+
+.card3 {
+    width: 45%;
+}
+
+.card:hover {
+    transform:scale(1.05)
+}
+
+
+footer {
+    width: 100%;
+    background-color: rgba(243, 215, 183, 1);
+    padding: 2rem 0;
+    animation: fade-in 1.5s ease-in-out;
+    margin-top: 3rem;
+}
+
+.foot {
+    display: flex;
+    margin-left: 3.125rem;
+    margin-right: 3.125rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.icons img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+}
+
+footer h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgba(51, 51, 51, 1);
+    
+}
 
 
 @media (max-width: 1024px) {
@@ -550,6 +658,26 @@ li {
     .middle-content {
         width: 80%;
     }
+
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .bottom-h2 {
+        font-size: 2rem;
+    }
+
+    .foot {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
 
 }
 
