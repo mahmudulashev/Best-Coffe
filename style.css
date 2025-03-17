@@ -215,7 +215,7 @@ li {
     width: 45%;
     display: flex;
     justify-content: flex-end;
-    position: absolute;
+    position: relative;
     
 }
 
@@ -569,6 +569,8 @@ footer h2 {
 
     .hero-matn {
         width: 80%;
+        text-align: center;
+        margin-left: 1rem;
     }
 
     .hero-right img {
@@ -582,6 +584,31 @@ footer h2 {
     .hero-right img:hover {
         transform: scale(1.05);
     }
+
+    .hero-card {
+        flex-direction: column-reverse;
+    }
+
+    .hero-left {
+        margin-top: 4.125rem;
+        margin-bottom: 4rem;
+    }
+
+    .fred {
+        display: none;
+    }
+
+    h2, h3 {
+        width: 85%;
+        text-align: center;
+    }
+
+
+
+
+
+
+
 
     .kartalar {
         margin-right: 1rem;
@@ -605,20 +632,6 @@ footer h2 {
     }
 
 
-    nav {
-        display: none;
-    }
-
-    .hero-card {
-        flex-direction: column-reverse;
-    }
-
-    .hero-left, .hero-right {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
     .chiziq {
         margin: 1rem 0;
@@ -627,27 +640,9 @@ footer h2 {
         background-color: rgba(10, 119, 95, 1);
     }
 
-    .hero-matn {
-        text-align: center;
-        margin-left: 1rem;
-    }
 
-    .hero-right img {
-        border: 5px solid rgba(10, 119, 95, 1);
-        border-radius: 17px;
-        width: 89%;
-        height: 89%;
 
-    }
 
-    .hero-left {
-        margin-top: 4.125rem;
-        margin-bottom: 4rem;
-    }
-
-    .fred {
-        display: none;
-    }
 
     .card1 {
         flex-direction: column;
@@ -715,9 +710,6 @@ footer h2 {
         margin-bottom: 2rem;
     }
 
-    .bottom {
-
-    }
 
     .foot {
         display: flex;
@@ -730,8 +722,5 @@ footer h2 {
         display: none;
     }
 
-    h2, h3 {
-        width: 85%;
-        text-align: center;
-    }
+
 }
