@@ -169,6 +169,7 @@ nav {
 
 /* off-screen-menu */
 .off-screen-menu {
+    font-family: "Space Grotesk", sans-serif;
     background-color:  rgb(34, 37, 49);
     width: 100%;
     max-width: 600px;
@@ -253,6 +254,7 @@ nav {
     color: white;
     text-transform: uppercase;
     font-size: 1.4rem;
+   text-decoration: none;
     
 }
 
