@@ -423,6 +423,7 @@ li {
 
     .middle-content {
         width: 80%;
+        align-items: start;
     }
 }
 
