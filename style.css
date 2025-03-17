@@ -89,7 +89,6 @@ nav {
     text-align: center;
     transition: .3s ease;
     height: 100vh;
-
 }
 
 
@@ -124,9 +123,9 @@ nav {
 }
 
 .ham-menu span {
-    height: 4px; 
-    width: 100%;
-    background-color: white;
+    height: 2.5px; 
+    width: 90%;
+    background-color: rgba(8, 99, 79, 1);
     border-radius: 25px;
     position: absolute;
     left: 50%;
@@ -160,6 +159,10 @@ nav {
     color: white;
     text-transform: uppercase;
     font-size: 1.4rem;
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    padding: 0.3rem;
     
 }
 
@@ -547,8 +550,13 @@ footer h2 {
 @media (max-width: 768px) {
 
     header {
-        padding: 1.5rem 1.875rem;
+        padding: 1rem 1.3rem;
         align-items: center;
+    }
+
+    .image {
+        align-items: center;
+        width: 70%;
     }
 
     .hamburger {
