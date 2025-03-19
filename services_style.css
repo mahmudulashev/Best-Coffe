@@ -34,6 +34,7 @@ button:hover {
     
 }
 
+
 /* HEADER */
 
 header {
@@ -193,7 +194,7 @@ h2 {
 }
 
 .matn {
-    font-family: Work Sans;
+
     font-size: 20px;
     font-weight: 400;
     line-height: 25px;
@@ -236,7 +237,7 @@ h2 {
 }
 
 .matn2 {
-    font-family: Work Sans;
+
     font-weight: 400;
     font-size: 1rem;
     line-height: 125%;
@@ -244,7 +245,7 @@ h2 {
 }
 
 .matn3 {
-    font-family: Work Sans;
+
     font-weight: 400;
     font-size: 1rem;
     line-height: 125%;
@@ -254,7 +255,7 @@ h2 {
 }
 
 h2 {
-    font-family: Work Sans;
+
     font-weight: 700;
     font-size: 40px;
     line-height: 125%;
@@ -263,7 +264,7 @@ h2 {
 }
 
 .matn4 {
-    font-family: Work Sans;
+  
     font-weight: 400;
     font-size: 15px;
     line-height: 125%;
@@ -273,7 +274,7 @@ h2 {
 }
 
 span {
-    font-family: Work Sans;
+
     font-weight: 400;
     font-size: 15px;
     line-height: 125%;
@@ -297,7 +298,6 @@ button {
     border-radius: 5px;
     background-color: black;
     border: transparent;
-    font-family: Work Sans;
     font-size: 16px;
     font-weight: 400;
     color: white;
@@ -361,12 +361,13 @@ footer h2 {
         display: none;
     }
 
-    .header-wrapper {
+    header {
         width: 100%;
         padding: 1rem;
+        align-items: center;
     }
 
-    .logo {
+    header img {
         width: 70%;
         margin-left: 0.5rem;
     }
@@ -382,5 +383,11 @@ footer h2 {
 
     .footer-matn {
         text-align: center;
+    }
+
+    .foot {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
 }
